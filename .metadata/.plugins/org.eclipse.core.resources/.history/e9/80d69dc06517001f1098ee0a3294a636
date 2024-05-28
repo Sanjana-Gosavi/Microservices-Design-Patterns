@@ -1,0 +1,10 @@
+package com.prowings.demoserviceconsumer.service;
+
+public interface ServiceProviderClient {
+
+	public String getHello() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

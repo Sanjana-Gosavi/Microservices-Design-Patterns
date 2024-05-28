@@ -1,0 +1,5 @@
+package com.prowings.retrydesignpattern.config;
+
+public class RestTemplateConfig {
+
+}

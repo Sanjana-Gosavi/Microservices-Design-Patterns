@@ -1,0 +1,13 @@
+package com.prowings.demoserviceconsumer.service;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name = "service-Provider")
+public interface ServiceProviderClient {
+
+	public String getHello() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

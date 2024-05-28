@@ -1,0 +1,5 @@
+package com.prowings.climateapi.service;
+
+public interface ClimateService {
+
+}

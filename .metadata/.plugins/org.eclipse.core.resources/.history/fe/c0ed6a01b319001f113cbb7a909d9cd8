@@ -1,0 +1,5 @@
+package com.prowings.circuitbreakerdesignpattern.model;
+
+public class Climate {
+
+}

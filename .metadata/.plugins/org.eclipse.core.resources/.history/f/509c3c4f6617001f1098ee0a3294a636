@@ -1,0 +1,5 @@
+package com.prowings.demoserviceprovider.controller;
+
+public class HelloController {
+
+}

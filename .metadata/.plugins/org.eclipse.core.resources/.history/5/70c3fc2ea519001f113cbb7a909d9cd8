@@ -1,0 +1,5 @@
+package com.prowings.climateapi.entity;
+
+public class Climate {
+
+}

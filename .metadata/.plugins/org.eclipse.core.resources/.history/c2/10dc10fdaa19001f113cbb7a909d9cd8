@@ -1,0 +1,22 @@
+package com.prowings.climateapi.service;
+
+import org.springframework.stereotype.Service;
+
+import com.prowings.climateapi.entity.Climate;
+
+@Service
+public class ClimateServiceImpl implements ClimateService{
+
+	@Override
+	public Climate createClimate(Climate climate) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Climate getClimate(String city) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

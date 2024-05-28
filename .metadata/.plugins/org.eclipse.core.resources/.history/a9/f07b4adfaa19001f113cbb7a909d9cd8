@@ -1,0 +1,10 @@
+package com.prowings.climateapi.repository;
+
+
+import org.springframework.data.jpa.repository.support.JpaRepositoryFactory;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class ClimateRepository extends JpaRepository<Climate, Integer>{
+
+}

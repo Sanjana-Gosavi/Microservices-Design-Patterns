@@ -1,0 +1,5 @@
+package com.prowings.orderservice.controller;
+
+public class OrderController {
+
+}

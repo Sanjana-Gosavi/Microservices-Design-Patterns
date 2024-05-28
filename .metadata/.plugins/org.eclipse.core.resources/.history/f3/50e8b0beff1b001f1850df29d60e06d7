@@ -1,0 +1,19 @@
+spring.application.name=microservices-design-patterns
+
+
+# Resilience4j Circuit Breaker Configuration
+resilience4j.circuitbreaker.instances.climateCircuitBreaker.registerHealthIndicator=true
+resilience4j.circuitbreaker.instances.climateCircuitBreaker.slidingWindowSize=10
+resilience4j.circuitbreaker.instances.climateCircuitBreaker.minimumNumberOfCalls=5
+resilience4j.circuitbreaker.instances.climateCircuitBreaker.failureRateThreshold=50
+resilience4j.circuitbreaker.instances.climateCircuitBreaker.waitDurationInOpenState=10s
+resilience4j.circuitbreaker.instances.climateCircuitBreaker.permittedNumberOfCallsInHalfOpenState=3
+resilience4j.circuitbreaker.instances.climateCircuitBreaker.maxWaitDurationInHalfOpenState=2s
+resilience4j.circuitbreaker.instances.climateCircuitBreaker.eventConsumerBufferSize=10
+resilience4j.circuitbreaker.instances.climateCircuitBreaker.recordExceptions[0]=java.io.IOException
+resilience4j.circuitbreaker.instances.climateCircuitBreaker.recordExceptions[1]=java.util.concurrent.TimeoutException
+resilience4j.circuitbreaker.instances.climateCircuitBreaker.recordExceptions[2]=org.springframework.web.client.HttpClientErrorException
+
+resilience4j.circuitbreaker.instances.climateCircuitBreaker.ignoreExceptions[0]=java.lang.IllegalArgumentException
+resilience4j.circuitbreaker.instances.climateCircuitBreaker.ignoreExceptions[1]=java.lang.IllegalArgumentException
+resilience4j.circuitbreaker.instances.climateCircuitBreaker.ignoreExceptions[2]=org.springframework.web.client.HttpClientErrorException

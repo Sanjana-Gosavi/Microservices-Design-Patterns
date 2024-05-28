@@ -1,0 +1,23 @@
+package com.prowings.climateapi.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Climate {
+	
+	private int id;
+	private String city;
+	private String country;
+	private String countryCode;
+	private String date;
+	private double temperatureInFht;
+	private String weather;
+	private String weatherDesc;
+	private double tempFeelsLike;
+	private double tempMin;
+	private double tempMax;
+	private double pressure;
+	private double humidity;
+	
+
+}

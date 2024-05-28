@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;circuit-breaker-design-pattern&apos; to &apos;microservices-design-patterns&apos;" description="Rename resource &apos;circuit-breaker-design-pattern&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/circuit-breaker-design-pattern" name="microservices-design-patterns" stamp="1716796029254" updateReferences="true"/>
+</session>

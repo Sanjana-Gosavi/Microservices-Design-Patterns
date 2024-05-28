@@ -1,0 +1,5 @@
+package com.prowings.demoserviceconsumer.service;
+
+public class ServiceProviderClient {
+
+}

@@ -1,0 +1,5 @@
+package com.prowings.userorderservice.controller;
+
+public class ClientController {
+
+}

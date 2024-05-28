@@ -1,0 +1,5 @@
+package com.prowings.climateapi.repository;
+
+public class ClimateRepository {
+
+}

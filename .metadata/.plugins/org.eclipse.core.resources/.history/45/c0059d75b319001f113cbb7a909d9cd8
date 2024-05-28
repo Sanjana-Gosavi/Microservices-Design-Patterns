@@ -1,0 +1,14 @@
+package com.prowings.circuitbreakerdesignpattern.model;
+
+
+public class Climate {
+	private String city;
+	private String country;
+	private String countryCode;
+	private String date;
+	private double temperatureInFht;
+	private String weather;
+	private String weatherDesc;
+	
+
+}
