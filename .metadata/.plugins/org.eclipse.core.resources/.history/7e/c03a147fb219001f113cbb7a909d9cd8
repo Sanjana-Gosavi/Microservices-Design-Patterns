@@ -1,5 +1,0 @@
-package com.prowings.circuitbreakerdesignpattern.config;
-
-public class RestTemplateConfig {
-
-}

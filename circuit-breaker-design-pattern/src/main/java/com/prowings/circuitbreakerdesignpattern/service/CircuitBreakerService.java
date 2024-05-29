@@ -16,18 +16,21 @@ public class CircuitBreakerService {
 	@Autowired
 	RestTemplate restTemplate;
 
-	String url = "https://localhost:8084/prowings/climates";
+	String url = "http://localhost:8084/prowings/climates/";
 	
-	@CircuitBreaker(name = "climateCircuitBreaker", fallbackMethod = "climateFallback")
-//	@Retry(name = "climateRetry", fallbackMethod = "climateFallback")
-//	@RateLimiter(name = "climateRateLimiter", fallbackMethod = "climateFallback")
+	@CircuitBreaker(name = "climateCircuitBreaker",fallbackMethod ="climateFallback" )
 	public String getClimate(String city) {
 		System.out.println("Service method started!!!");
+		
+		if(Math.random() > 0.5) {
+			throw new RuntimeException("Simulated service failure");
+		}
+		
 		Climate response = restTemplate.getForObject(url+city, Climate.class);
 		return "Details successfully fetched for city:" +city;
 	}
 	
-	public String climateFallback(Throwable t, String city) {
+	public String climateFallback(Throwable t) {
 		System.out.println("in fallback method of climate!!");
 		return "Climate service is temporarily unavailable!!";
 	}

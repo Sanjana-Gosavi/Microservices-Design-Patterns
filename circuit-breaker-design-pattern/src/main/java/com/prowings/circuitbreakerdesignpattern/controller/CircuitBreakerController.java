@@ -13,7 +13,7 @@ import com.prowings.circuitbreakerdesignpattern.service.CircuitBreakerService;
 @RestController
 public class CircuitBreakerController {
 	
-	private final CircuitBreakerService breakerService;
+	private CircuitBreakerService breakerService;
 
 	@Autowired
 	public CircuitBreakerController(CircuitBreakerService breakerService) {
@@ -29,11 +29,4 @@ public class CircuitBreakerController {
 		System.out.println("Request Completed successfully!!!");
 		return new ResponseEntity<String>(response, HttpStatus.OK);
 	}
-	
-	
-//	@GetMapping("/climate/{city}")
-//	public String getClimate(String city) {
-//		return breakerService.getClimate(city);
-//	}
-
 }
